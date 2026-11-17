@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><title>Connecting…</title>
+<style>body{font:16px/1.6 system-ui,sans-serif;max-width:640px;margin:60px auto;padding:0 16px}</style></head>
+<body><p>Returning to Local Post Hub on this computer…</p>
+<p>If nothing happens, make sure the local app is running (<code>npm run connect</code>) and <a id="go" href="#">click here</a>.</p>
+<script>
+// Forwards the OAuth result (code + state) to the app running on this computer. Nothing is stored here.
+var target = 'https://localhost:8787/callback/tiktok' + location.search;
+document.getElementById('go').href = target;
+location.replace(target);
+</script></body></html>
